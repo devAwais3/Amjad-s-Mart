@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakery Amjad's Mart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white shadow-sm fixed-top px-3" style="border-radius: 0 0 20px 20px;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <i class="ri-shopping-cart-line text-success fs-4"></i>
+        Amjad's Mart
+      </a>
+
+      <!-- Offcanvas Toggler - ONLY ON SMALL SCREENS -->
+      <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop Nav Links - ONLY ON LARGE SCREENS -->
+      <div class="d-none d-lg-block">
+        <ul class="navbar-nav ms-auto d-flex flex-row gap-3 align-items-center">
+          <li class="nav-item"><a class="nav-link custom-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="groceries.html">Groceries</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="dairy.html">Fresh & Dairy</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="beverages.html">Beverages</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="bakery.html">Bakery & Snacks</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="babyCare.html">Baby & Kids</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="personalCare.html">Personal Care</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="homeEssentials.html">Home Essentials</a></li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold bg-success px-3 py-1 rounded-pill" href="tel:+923159562499">Order
+              Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas for Mobile Menu (SMALL SCREENS ONLY) -->
+  <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link custom-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="groceries.html">Groceries</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="dairy.html">Fresh & Dairy</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="beverages.html">Beverages</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="bakery.html">Bakery & Snacks</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="babyCare.html">Baby & Kids</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="personalCare.html">Personal Care</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="homeEssentials.html">Home Essentials</a></li>
+        <li class="nav-item mt-2">
+          <a class="nav-link text-white fw-bold bg-success px-3 py-1 rounded-pill" href="tel:+923159562499">Order
+            Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container py-5 d-flex justify-content-center">
+    <img src="images/bakeryBanner.jpg" class="img-fluid rounded shadow" style="width: 500px;" alt="Grocery Image">
+  </div>
+
+  <!-- Beverages (Compact) -->
+  <div class="container">
+    <h2 class="mb-4">Bakery & Snacks</h2>
+
+    <!-- Baking Ingredients -->
+    <h5 class="mb-3">Baking Ingredients</h5>
+    <div class="row g-4">
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/custard.jpg" class="img-fluid p-2" alt="Vanilla Custard - 275gm"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Vanilla Custard - 275gm</h6>
+            <p class="text-success fw-bold mb-2">Rs. 215.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/vermicilli.jpg" class="img-fluid p-2" alt="Vermicilli (Siwaiyan) - 150gm"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Fresh Vermicilli - 150gm</h6>
+            <p class="text-success fw-bold mb-2">Rs. 75.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/rasmalai.png" class="img-fluid p-2" alt="Special Mix Rasmalai - 100gm"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Special Mix Rasmalai - 100gm</h6>
+            <p class="text-success fw-bold mb-2">Rs. 160.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chocolates & Cookies -->
+    <h5 class="mt-5 mb-3">Chocolates & Cookies</h5>
+    <div class="row g-4">
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/dairyMilk.jpg" class="img-fluid p-2" alt="Cadbury Dairy Milk - 38gm"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Cadbury Dairy Milk - 38gm</h6>
+            <p class="text-success fw-bold mb-2">Rs. 160.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/sooper.jpg" class="img-fluid p-2" alt="Sooper Biscuit (Pack of 12)"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Sooper Biscuit (Pack of 12)</h6>
+            <p class="text-success fw-bold mb-2">Rs. 260.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/chocoDonut.jpg" class="img-fluid p-2" alt="Chocolate Donut (Pack of 6)"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Chocolate Donut (Pack of 6)</h6>
+            <p class="text-success fw-bold mb-2">Rs. 330.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dry Fruits -->
+    <h5 class="mt-5 mb-3">Dry Fruits</h5>
+    <div class="row g-4">
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/coconutPowder.png" class="img-fluid p-2" alt="Coconut Powder - 250gm"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Coconut Powder - 250gm</h6>
+            <p class="text-success fw-bold mb-2">Rs. 370.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/kishmish.jpg" class="img-fluid p-2" alt="Raisin (Kishmish) - 250gm"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Raisin (Kishmish) - 250gm</h6>
+            <p class="text-success fw-bold mb-2">Rs. 170.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <img src="images/wholeCoconut.jpg" class="img-fluid p-2" alt="Whole Coconut - 100gm"
+            style="height:120px; object-fit: contain;">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-1">Whole Coconut - 100gm</h6>
+            <p class="text-success fw-bold mb-2">Rs. 160.00</p>
+            <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4 mt-5" style="background-color: #97C3A3;">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- 3 Grid Section -->
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Contact Us</h6>
+          <p>Sheikh Maltoon Town, Mardan<br>Phone: 03159562499<br>Email: amjadmrd82@gmail.com</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Payment Methods</h6>
+          <p>Cash on Delivery </p>
+          <p>Easypaisa: <a class="text-decoration-none" href="#">03219871637</a></p>
+          <p>JazzCash: <a class="text-decoration-none" href="#">03000000000</a></p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Store Hours</h6>
+          <p>Mon - Sat: 9:00 AM - 10:00 PM<br>Sunday: 10:00 AM - 8:00 PM</p>
+        </div>
+      </div>
+
+      <!-- 2 Grid Section -->
+      <div class="row text-center text-center">
+        <div class="col-md-6 mb-3">
+          <h6>Follow Us</h6>
+          <p>
+            <a href="https://wa.me/923159562499" class="text-success text-decoration-none" target="_blank">
+              <i class="ri-whatsapp-line"></i> WhatsApp 03159562499
+            </a> |
+            <a href="tel:+923159562499" class="text-info text-decoration-none">
+              <i class="ri-phone-line"></i> Call Now 03219871637
+            </a> |
+            <a href="https://www.facebook.com/profile.php?id=100001279033126" class="text-primary text-decoration-none"
+              target="_blank">
+              <i class="ri-facebook-line"></i> Facebook
+            </a>
+          </p>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h6 class="fw-bold">Order Now</h6>
+          <p>Place your order via WhatsApp or Phone Call. Only orders of Rs. 2000 or more are eligible for home delivery.<br>
+            <a href="tel:+923159562499" class="text-success text-decoration-none">WhatsApp</a> |
+            <a href="tel:+923159562499" class="text-success text-decoration-none">Call Now 03159562499</a>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+      <p class="text-center text-muted small mb-0">© 2025 Amjad's Mart – Sector L. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

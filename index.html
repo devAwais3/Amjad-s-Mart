@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amjad's Mart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white shadow-sm fixed-top px-3" style="border-radius: 0 0 20px 20px;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <i class="ri-shopping-cart-line text-success fs-4"></i>
+        Amjad's Mart
+      </a>
+
+      <!-- Offcanvas Toggler - ONLY ON SMALL SCREENS -->
+      <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop Nav Links - ONLY ON LARGE SCREENS -->
+      <div class="d-none d-lg-block">
+        <ul class="navbar-nav ms-auto d-flex flex-row gap-3 align-items-center">
+          <li class="nav-item"><a class="nav-link custom-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="groceries.html">Groceries</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="dairy.html">Fresh & Dairy</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="beverages.html">Beverages</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="bakery.html">Bakery & Snacks</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="babyCare.html">Baby & Kids</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="personalCare.html">Personal Care</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="homeEssentials.html">Home Essentials</a></li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold bg-success px-3 py-1 rounded-pill" href="tel:+923159562499">Order
+              Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas for Mobile Menu (SMALL SCREENS ONLY) -->
+  <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link custom-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="groceries.html">Groceries</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="dairy.html">Fresh & Dairy</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="beverages.html">Beverages</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="bakery.html">Bakery & Snacks</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="babyCare.html">Baby & Kids</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="personalCare.html">Personal Care</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="homeEssentials.html">Home Essentials</a></li>
+        <li class="nav-item mt-2">
+          <a class="nav-link text-white fw-bold bg-success px-3 py-1 rounded-pill" href="tel:+923159562499">Order
+            Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- slider -->
+  <div class="container my-4">
+    <div class="rounded overflow-hidden shadow-sm" style="border-radius: 20px;">
+
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="images/sliderImg0.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/sliderImg2.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/sliderImg3.webp" class="d-block w-100" alt="Slide 3">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/sliderImg1.webp" class="d-block w-100" alt="Slide 4">
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Products (Compact) -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Products</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card text-center border-0 shadow-sm p-2">
+            <img src="images/milk.jpg" class="img-fluid p-2" alt="1 Liter Milk Pack"
+              style="height:120px; object-fit: contain;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-1">Milk - 1Ltr</h6>
+              <p class="text-success fw-bold mb-2">Rs. 345.00</p>
+              <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card text-center border-0 shadow-sm p-2">
+            <img src="images/dawnBread.png" class="img-fluid p-2" alt="Dawn Milky Bread Pack"
+              style="height:120px; object-fit: contain;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-1">Milky Bread</h6>
+              <p class="text-success fw-bold mb-2">Rs. 110.00</p>
+              <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card text-center border-0 shadow-sm p-2">
+            <img src="images/basmati rice.png" class="img-fluid p-2" alt="Basmati Rice Pack"
+              style="height:120px; object-fit: contain;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-1">Basmati Rice</h6>
+              <p class="text-success fw-bold mb-2">Rs. 450.00</p>
+              <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card text-center border-0 shadow-sm p-2">
+            <img src="images/eggs.png" class="img-fluid p-2" alt="Egg Tray with 12 Eggs"
+              style="height:120px; object-fit: contain;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-1">Eggs (Pack of 12)</h6>
+              <p class="text-success fw-bold mb-2">Rs. 360.00</p>
+              <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card text-center border-0 shadow-sm p-2">
+            <img src="images/luxSoap.jpg" class="img-fluid p-2" alt="Lux Soap Bar 128g"
+              style="height:120px; object-fit: contain;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-1">Soaps - 128gm</h6>
+              <p class="text-success fw-bold mb-2">Rs. 156.00</p>
+              <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card text-center border-0 shadow-sm p-2">
+            <img src="images/cookingOils.jpg" loading="lazy" class="img-fluid p-2" alt="Cooking Oil Bottle"
+              style="height:120px; object-fit: contain;">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-1">Cooking Oil</h6>
+              <p class="text-success fw-bold mb-2">Rs. 610.00</p>
+              <a href="#" class="btn btn-sm btn-success w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category -->
+  <section id="categories" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Shop by Category</h2>
+      <div class="row g-4">
+        <!-- Category Cards -->
+        <div class="col-md-4">
+          <div class="card category-card">
+            <img src="images/groceries.avif" class="card-img-top" alt="Groceries">
+            <div class="card-body text-center">
+              <h5 class="card-title">Groceries</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card category-card">
+            <img src="images/fresh&healthy.avif" class="card-img-top" alt="Fresh & Dairy">
+            <div class="card-body text-center">
+              <h5 class="card-title">Fresh & Dairy</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card category-card">
+            <img src="images/beverages.avif" class="card-img-top" alt="Beverages">
+            <div class="card-body text-center">
+              <h5 class="card-title">Beverages</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card category-card">
+            <img src="images/bakery.avif" class="card-img-top" alt="Bakery & Snacks">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bakery & Snacks</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card category-card">
+            <img src="images/baby&kids.avif" class="card-img-top" alt="Baby & Kids">
+            <div class="card-body text-center">
+              <h5 class="card-title">Baby & Kids</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card category-card">
+            <img src="images/personalCare.avif" class="card-img-top" alt="Personal Care">
+            <div class="card-body text-center">
+              <h5 class="card-title">Personal Care</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 offset-md-4">
+          <div class="card category-card">
+            <img src="images/homeEssentials.avif" class="card-img-top" alt="Home Essentials">
+            <div class="card-body text-center">
+              <h5 class="card-title">Home Essentials</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Boxes -->
+  <section class="py-4 bg-white border-top border-bottom">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Fresh Products</h5>
+          <p class="text-muted">We source the freshest products daily for our customers</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Home Delivery</h5>
+          <p class="text-muted">Order via WhatsApp or phone call for convenient home delivery</p>
+          <p class="text-muted"> <b><em class="text-success">NOTE:</em></b> Only orders of Rs. 2000 or more are eligible
+            for home delivery.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Best Prices</h5>
+          <p class="text-muted">Competitive prices on all your daily essentials</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4 mt-5" style="background-color: #97C3A3;">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- 3 Grid Section -->
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Contact Us</h6>
+          <p>Sheikh Maltoon Town, Mardan<br>Phone: 03159562499<br>Email: amjadmrd82@gmail.com</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Payment Methods</h6>
+          <p>Cash on Delivery </p>
+          <p>Easypaisa: <a class="text-decoration-none" href="#">03219871637</a></p>
+          <p>JazzCash: <a class="text-decoration-none" href="#">03000000000</a></p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Store Hours</h6>
+          <p>Mon - Sat: 9:00 AM - 10:00 PM<br>Sunday: 10:00 AM - 8:00 PM</p>
+        </div>
+      </div>
+
+      <!-- 2 Grid Section -->
+      <div class="row text-center text-center">
+        <div class="col-md-6 mb-3">
+          <h6>Follow Us</h6>
+          <p>
+            <a href="https://wa.me/923159562499" class="text-success text-decoration-none" target="_blank">
+              <i class="ri-whatsapp-line"></i> WhatsApp 03159562499
+            </a> |
+            <a href="tel:+923159562499" class="text-info text-decoration-none">
+              <i class="ri-phone-line"></i> Call Now 03219871637
+            </a> |
+            <a href="https://www.facebook.com/profile.php?id=100001279033126" class="text-primary text-decoration-none"
+              target="_blank">
+              <i class="ri-facebook-line"></i> Facebook
+            </a>
+          </p>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h6 class="fw-bold">Order Now</h6>
+          <p>Place your order via WhatsApp or Phone Call. Only orders of Rs. 2000 or more are eligible for home delivery.<br>
+            <a href="tel:+923159562499" class="text-success text-decoration-none">WhatsApp</a> |
+            <a href="tel:+923159562499" class="text-success text-decoration-none">Call Now 03159562499</a>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+      <p class="text-center text-muted small mb-0">© 2025 Amjad's Mart – Sector L. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
