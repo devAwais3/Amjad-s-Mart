@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amjad's Mart</title>
+  <title>Ali Mart Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
@@ -15,9 +15,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-light bg-white shadow-sm fixed-top px-3" style="border-radius: 0 0 20px 20px;">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
-        <i class="ri-shopping-cart-line text-success fs-4"></i>
-        Amjad's Mart
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2 fs-2" href="index.html">
+        <i class="ri-shopping-cart-line text-success fs-2"></i>
+        a|i Mart
       </a>
 
       <!-- Offcanvas Toggler - ONLY ON SMALL SCREENS -->
@@ -50,7 +50,7 @@
   <!-- Offcanvas for Mobile Menu (SMALL SCREENS ONLY) -->
   <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title">Menu</h5>
+      <h5 class="offcanvas-title fs-2"><i class="ri-shopping-cart-line text-success fs-2"></i>a|i Mart</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
@@ -99,7 +99,7 @@
         <!-- Navigation Buttons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
-        </button>
+        </button> 
         <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
         </button>
@@ -110,7 +110,7 @@
   <!-- Featured Products (Compact) -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Featured Products</h2>
+      <h1 class="text-center mb-4 fw-bold">a|i Recommends</h1>
       <div class="row g-4 justify-content-center">
 
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
@@ -192,12 +192,12 @@
   <!-- Shop by Category -->
   <section id="categories" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Shop by Category</h2>
+      <h1 class="text-center fw-bold mb-4">Browse by Category</h1>
       <div class="row g-4">
         <!-- Category Cards -->
         <div class="col-md-4">
           <div class="card category-card">
-            <img src="images/groceries.avif" class="card-img-top" alt="Groceries">
+            <a href="groceries.html"><img src="images/groceries.avif" class="card-img-top" alt="Groceries"></a>
             <div class="card-body text-center">
               <h5 class="card-title">Groceries</h5>
             </div>
@@ -205,7 +205,7 @@
         </div>
         <div class="col-md-4">
           <div class="card category-card">
-            <img src="images/fresh&healthy.avif" class="card-img-top" alt="Fresh & Dairy">
+            <a href="dairy.html"><img src="images/fresh&healthy.avif" class="card-img-top" alt="Fresh & Dairy"></a>
             <div class="card-body text-center">
               <h5 class="card-title">Fresh & Dairy</h5>
             </div>
@@ -213,7 +213,7 @@
         </div>
         <div class="col-md-4">
           <div class="card category-card">
-            <img src="images/beverages.avif" class="card-img-top" alt="Beverages">
+            <a href="beverages.html"><img src="images/beverages.avif" class="card-img-top" alt="Beverages"></a>
             <div class="card-body text-center">
               <h5 class="card-title">Beverages</h5>
             </div>
@@ -221,7 +221,7 @@
         </div>
         <div class="col-md-4">
           <div class="card category-card">
-            <img src="images/bakery.avif" class="card-img-top" alt="Bakery & Snacks">
+            <a href="bakery.html"><img src="images/bakery.avif" class="card-img-top" alt="Bakery & Snacks"></a>
             <div class="card-body text-center">
               <h5 class="card-title">Bakery & Snacks</h5>
             </div>
@@ -229,7 +229,7 @@
         </div>
         <div class="col-md-4">
           <div class="card category-card">
-            <img src="images/baby&kids.avif" class="card-img-top" alt="Baby & Kids">
+            <a href="babyCare.html"><img src="images/baby&kids.avif" class="card-img-top" alt="Baby & Kids"></a>
             <div class="card-body text-center">
               <h5 class="card-title">Baby & Kids</h5>
             </div>
@@ -237,7 +237,7 @@
         </div>
         <div class="col-md-4">
           <div class="card category-card">
-            <img src="images/personalCare.avif" class="card-img-top" alt="Personal Care">
+            <a href="personalCare.html"><img src="images/personalCare.avif" class="card-img-top" alt="Personal Care"></a>
             <div class="card-body text-center">
               <h5 class="card-title">Personal Care</h5>
             </div>
@@ -245,7 +245,7 @@
         </div>
         <div class="col-md-4 offset-md-4">
           <div class="card category-card">
-            <img src="images/homeEssentials.avif" class="card-img-top" alt="Home Essentials">
+            <a href="homeEssentials.html"><img src="images/homeEssentials.avif" class="card-img-top" alt="Home Essentials"></a>
             <div class="card-body text-center">
               <h5 class="card-title">Home Essentials</h5>
             </div>
@@ -325,7 +325,7 @@
       </div>
 
       <hr>
-      <p class="text-center text-muted small mb-0">© 2025 Amjad's Mart – Sector L. All rights reserved.</p>
+      <p class="text-center text-muted small mb-0">© 2025 Ali Mart – Sector L. All rights reserved.</p>
     </div>
   </footer>
 
